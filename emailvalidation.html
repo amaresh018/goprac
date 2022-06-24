@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+    <input id="text" placeholder="Email" type="text">
+    <p id="demo"></p>
+    <button type="button" onclick="validation()">click</button>
+   </div>
+   <script>
+    function validation(){
+
+       var email=document.getElementById('text').value;
+
+       var regx=/^([a-z0-9\._]+)@([a-zA-Z0-9]+).([a-z]+).([a-z]+)?$/
+
+       if(regx.test(email)){
+        // alert("this Email  is valid")
+        document.getElementById('demo').innerHTML="valid"
+        document.getElementById('demo').style.color="green"
+        
+       }else{
+        // alert("incorrect your mail")
+        document.getElementById('demo').innerHTML="invalid"
+        document.getElementById('demo').style.color="red"
+       
+       }
+    }
+   </script>
+</body>
+</html>

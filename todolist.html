@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCREMENT</title>
+    <style>
+        body{
+            background-color: darkolivegreen;
+        }
+        .result{
+            text-align: center;
+            border: 1px solid black;
+            height: 300px;
+            width: 400px;
+            background-color: blanchedalmond;
+            margin-left: 450px;
+            margin-top: 100px;
+            border-radius: 20px; 
+        }
+        #but1{
+            border-radius: 4px;
+            color:white ;
+            background-color: red;
+        }
+        #but2{
+            border-radius: 4px;
+            color: white;
+            background-color: green;
+        }
+        #but3{
+            border-radius: 4px;
+            color: white;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="result">
+        <h3>INCREMENT DECREMENT</h3>
+    <p id="demo">0</p>
+    <button id="but1" onclick="a()">increment</button>
+    <button id="but2" onclick="b()">decrement</button>
+    <button id="but3" onclick="c()">reset</button>
+</div>
+<script>
+    //  function Add(){
+    //    let x= document.getElementById('demo').innerHTML
+    //      let value= parseInt(x) + 1
+    //      document.getElementById('demo').innerHTML=value
+    //      console.log(value);
+    // }
+    // function decrement(){
+    //    let x= document.getElementById('demo').innerHTML
+    //      let value= parseInt(x) - 1
+    //      document.getElementById('demo').innerHTML=value
+    //      console.log(value);
+    // }
+    // function reset(){
+    //    let x= document.getElementById('demo').innerHTML=0
+    //    console.log(0);
+        
+    // }
+
+    const x=document.getElementById('demo')
+    x.addEventListener('click',a)
+    x.addEventListener('click',b)
+    x.addEventListener('click',c)
+    function a(){
+        const r=document.getElementById('demo').innerHTML
+        let value=parseInt(r) +1
+        document.getElementById('demo').innerHTML=value
+    }
+    function b(){
+        const r=document.getElementById('demo').innerHTML
+        let value=parseInt(r) -1
+        document.getElementById('demo').innerHTML=value
+    }
+    function c(){
+        const r=document.getElementById('demo').innerHTML=0
+        
+    }
+</script>
+   
+</body>
+</html>

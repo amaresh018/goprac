@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sand.css">
+</head>
+<body>
+    <div class="grid">
+    <div class="a1">
+        <h1>Form validation</h1>
+        <ul>
+            <li>We need to get user name ,email</li>
+            <li>ihfadde waszhfcgeud qjkgfyqwf match or </li>
+        </ul>
+    </div>
+    <div class="a2">
+        <fieldset>
+        <form>
+        <h1>Register with us</h1>
+        <div class="a3">
+        <div>username</div>
+        <input  type="href" id="username"><br><br>
+        <div>Email</div>
+        <input type="href" id="username"><br><br>
+        <div>Password</div>
+        <input type="href" id="username"><br><br>
+        <div>confirm password</div>
+        <input type="href" id="username"><br><br>
+        
+        <button >submit</button>
+        <div class="amaresh"></div>
+        </div>
+        </form>
+    </fieldset>
+    </div>
+    </div>
+    <script>
+       const form=document.querySelector('.amaresh');
+       const feedback=document.querySelector('.paras')
+       form.addEventListener('submit',e=> {
+           e.preventDefault();
+           const username=form.username.value;
+           const usernamepattern=/^[a-zA-Z]{6,12}$/;
+           if(usernamepattern.test(username)) {
+               feedback.textContent="that username is valid"
+               form.setAttribute('class','succes');
+           }
+           else{
+               feedback.textContent="username must contain only"
+               form.setAttribute('class','error');
+           }
+       });
+    </script>
+</body>
+</html>

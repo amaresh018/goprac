@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">0</p>
+    <button onclick="result()">Increment</button>
+    <button onclick="dec()">Deccrement</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        function result(){
+           let x=document.getElementById('demo').innerHTML
+           let value= parseInt(x) +1
+           document.getElementById('demo').innerHTML=value
+        }
+        function dec(){
+           let x=document.getElementById('demo').innerHTML
+           let value= parseInt(x) -1
+           document.getElementById('demo').innerHTML=value
+        }
+        function reset(){
+           let x=document.getElementById('demo').innerHTML=0
+           
+        }
+    </script>
+</body>
+</html>

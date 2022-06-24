@@ -1,0 +1,119 @@
+.grid{
+    display: grid;
+    grid-template-columns: 35% 75%;
+    background-color: black;
+    color: whitesmoke;
+    font-size:large;
+}
+ul li{
+    display: inline;
+    padding: 30px;
+    padding-right: 100px;
+        }
+    .li :hover{
+        color: grey;
+    }
+.head{
+    padding-left: 70px;
+}
+.s1{
+    padding-top: 10px;
+    color: white;
+    }
+.a{
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/1438834/pexels-photo-1438834.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 1247px;
+    font-size: 25px;   
+}
+.a button{
+    font-size: 18px;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 57% 43%;
+    grid-gap: 10px;
+}
+.p{
+    font-size: 18px;
+    
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    }
+.grid2 p{
+    font-size: 20px;
+}
+.img2{
+    border: 1px solid saddlebrown;
+    padding: 50px;
+}
+.img3{
+    border: 1px solid saddlebrown;
+    padding: 50px;
+}
+.img4{
+    border: 1px solid saddlebrown;
+    padding: 50px;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    
+}
+.img5{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.grid4{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    border: 1px solid silver;
+    background-color: silver;
+
+}
+.p1{
+    margin-right: 400px;
+padding-right: 200px;
+padding-top: 45px;
+font-size: 18px;
+}
+.img6{
+    margin-left: 450px;
+}
+.grid5{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border: 1px solid silver;
+    background-color: silver;
+}
+.p2{
+margin-right: 400px;
+padding-right: 200px;
+padding-top: 45px;
+font-size: 18px;
+}
+.img7{
+    margin-left: 450px;
+}
+.b1{
+    margin-left: 400px;
+    font-size:large;
+}
+
+.pr{
+    font-size: 20px;
+    padding-left: 80px;
+}
+.c3{
+    font-size: 30px;
+    padding-left: 150px;
+    
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tood{
+            text-align: center;
+            border: 2px solid black;
+            height: 300px;
+            width: 400px;
+            margin-left: 400px;
+            margin-top: 150px;
+            padding-top: 50px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            
+        }
+        button{
+            
+            background-color: navy;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="tood">
+    <h1 id="demo"></h1>
+    <input onkeypress="rish(event)">
+    <button  onclick="remove()">Delete</button>
+    <ul id="java"></ul>
+</div>
+
+    <script>
+        const x=document.getElementById('java')
+        function rish(e){
+            if(e.code === 'Enter'){
+             var war=e.target.value
+             const y=document.createElement('li') 
+             y.style.backgroundColor='green'
+          
+             y.style.color="white"
+             y.style.border="1px solid black"
+             y.style.textAlign="center"
+             y.style.width="200px"
+             y.style.height='auto'
+             y.style.marginLeft='100px'
+             y.style.height="30px"
+             y.style.paddingTop='10px'
+             y.style.borderRadius="10px" 
+             y.innerHTML=`${war}`
+             x.appendChild(y)
+
+
+        }
+    }
+
+    function remove(){
+        document.getElementById('java').innerHTML=''
+
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript form validation - checking email</title>
+     
+</head>
+<body>
+    <input onkeypress="checkEmail()"  type="email"/>
+
+<script >
+    function checkEmail() {
+
+// var email = document.getElementById('txtEmail');
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+if (!filter.test(email.value)) {
+alert('Please provide a valid email address');
+email.focus;
+return false;
+}
+}
+
+
+</script>
+</body>
+</html>

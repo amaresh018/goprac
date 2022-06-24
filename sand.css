@@ -1,0 +1,27 @@
+.grid{
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+.grid h1{
+    text-align: center;
+}
+.a2{
+    padding-right:300px ;
+}
+.a3 {
+    padding-left: 50px;
+    
+    
+}
+.a3 input{
+    border: 1px solid green;
+}
+.a2 button{
+    text-align: center;
+}
+.succes{
+    border: 2px solid green;
+}
+.error{
+    border: 2px solid red;
+}

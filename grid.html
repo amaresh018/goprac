@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+
+        }
+        .grid h1{
+            background-color: aqua;
+            border: 1px solid red;
+            text-align: center;
+            padding: 50px;
+        }
+        #Head1{
+            grid-row: span 2;
+        }
+        #Head3{
+            grid-column: span 2;
+        }
+        #Head6{
+            grid-row: span 2;
+        }
+        #Head3{
+            grid-column: span 2;
+        }
+        #Head7{
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+      <h1 id="Head1">Moorthy</h1>
+      <h1 id="Head2">Ragav</h1>
+      <h1 id="Head3">Amaresh</h1>
+      <h1 id="Head4">Bhaskar</h1>
+      <h1 id="Head5">Indraneel</h1>
+      <h1 id="Head6">Adhi</h1>
+      <h1 id="Head7">Sudharsan</h1>
+      <h1 id="Head8">Santhosh</h1>
+    </div>
+</body>
+</html>

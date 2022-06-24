@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function subject(java,javascript){
+        //     alert(`starting my ${java} homework`);
+        //     callback();
+        // }
+        // function alert1(){
+        //     alert("finished my homework");
+        // }
+        // subject('javascript',alert1);
+        // function amaresh(subject,callback){
+        //     alert(`starting my ${subject} homework`);
+        //     callback();
+        // }
+        // function santhosh(){
+        //     alert('fishesd my homework');
+        // }
+        // amaresh('javascript',santhosh)
+
+    //     let promise=new promise(function(resolve,reject){
+    //         setTimeout(function(){
+    //             resolve(console.log('promise resolves'))
+    //         },1000)
+    //     });
+
+    //     console.log(promise);
+    // let promise = new Promise((resolve,reject) => {
+    //     setTimeout(() => reject(new error('oops')),1000);
+    // });
+    // promise.catch(alert);
+    let myPromise = new Promise(function(myResolve, myReject) {
+  setTimeout(function() { myResolve("I love You !!"); }, 3000);
+});
+
+myPromise.then(function(value) {
+  document.getElementById("demo").innerHTML = value;
+});
+     </script>
+</body>
+</html>

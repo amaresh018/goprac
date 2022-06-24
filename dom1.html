@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blue;">The dom</h1>
+    <div>
+        <p>error</p>
+        <p class="error">succes</p>
+    </div>
+    <script>
+        // const name1=document.querySelector('p');
+        // console.log(name1[0]);
+        // name1.forEach(name1=>{
+        //     console.log(name1);
+        // })
+        // const name1=document.getElementsByClassName('error')
+        // console.log(name1[0])
+        const name=document.querySelector('.error');
+        // const name1=document.querySelectorAll('p')
+        // name1.forEach(name =>{
+        //     console.log(name.innerText);
+        //     name.innerText +="amaresh";
+        // })
+        // console.log(name1.innerText);
+        // name1.innerText="javascript is awesome"
+
+        // name.innerHTML="<h1>Happy new year</h1>"
+
+        const program=['js','css','html','react'];
+        program.forEach(person =>{
+            content.innerHTML +=`<p>${person}</p>`;
+        })
+    </script>
+</body>
+</html>

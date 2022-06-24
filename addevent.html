@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     div{
+         border: 2px solid black;
+         color: aqua;
+     }
+
+     #rish{
+         background-color: brown;
+     }
+
+      
+
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      function rish(){
+          var x=new Date()
+          document.getElementById('demo').innerHTML=x.getDate()+":"+x.getMonth()+":"+x.getFullYear()
+      }
+      rish((setInterval,1000))
+
+    </script>
+</body>
+</html>

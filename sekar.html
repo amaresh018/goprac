@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <input onkeypress="App(event)"/>
+    <p class="demo"></p>
+</div>
+    <script>
+        const x=document.querySelector(".demo")
+        const App=(event)=>{
+            if(event.code === 'Enter'){
+          var input=event.target.value;
+          console.log(input);
+
+          const y=document.createElement('li')
+          var z=x.appendChild(y)
+          y.innerHTML= input
+        }
+    }
+
+
+    
+    </script>
+</body>
+</html>

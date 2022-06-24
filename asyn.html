@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="demo"></h3>
+    <script>
+        // function Rish(){
+        // document.getElementById('demo').innerHTML='I Love You';
+        
+        // }
+        // setTimeout(Rish,1000);
+       
+        // function Rish1(){
+        //     let d=new Date();
+        //     document.getElementById('demo').innerHTML=d.getHours()+':'+d.getMinutes()+":"+d.getSeconds();
+        // }
+        // setInterval(Rish1,1000)
+
+        // function Myfun(){
+        //     fetch("http://jsonplaceholder.typicode.com/users")
+        //     .then((jes)=>{
+        //         return jes.json()
+        //     })
+        //     .then ((rish)=>{
+        //         console.log(rish);
+        //     })
+        // }
+        // Myfun()
+
+        // async function AsynFun(){
+        //  const post=   await fetch("http://jsonplaceholder.typicode.com/users")
+        //  const posts= await post.json()
+        //  console.log(posts);
+        // }
+        // AsynFun()
+
+        async function myfun(){
+            let promise= new Promise(function(resolve,reject){
+                setTimeout(()=>{('i love you rish')},1000)
+            })
+            var pro=await promise;
+        }
+        myfun();
+    </script>
+</body>
+</html>

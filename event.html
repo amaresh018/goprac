@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+        form{
+            margin: 40px;
+            max-width: 200px;
+            background-color: white;
+            padding: 10px;
+
+        }
+        input{
+            display: block;
+            margin: 10px auto;
+            padding: 4px;
+        }
+        .succes{
+            border: 2px solid green;
+        }
+        .error{
+            border: 2px solid 
+            red;
+        }
+    </style>
+</head>
+<body>
+    <form class="amaresh">
+        <input type="text" id="username" placeholder="username">
+        <input type="submit" value="submit">
+        <div class="raghav"></div>
+    </form>
+    
+    <script>
+        const form=document.querySelector('.amaresh');
+       const feedback=document.querySelector('.raghav')
+       form.addEventListener('submit',e=> {
+           e.preventDefault();
+           const username=form.username.value;
+           const usernamepattern=/^[a-zA-Z]{6,12}$/;
+           if(usernamepattern.test(username)) {
+               feedback.textContent="that username is valid"
+               form.setAttribute('class','succes');
+           }
+           else{
+               feedback.textContent="username must contain only"
+               form.setAttribute('class','error');
+           }
+       });
+    </script>
+</body>
+</html>

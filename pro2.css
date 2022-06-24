@@ -1,0 +1,33 @@
+body{
+    background-color: white;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 2em;
+}
+.hello{
+    background-color: blue;
+    color: chartreuse;
+
+    border-left: 5px black solid;
+    border-right: 5px white solid;
+    border-top: 5px red dotted;
+    border-bottom: 5px yellow solid;
+    margin-top: 20px;
+
+    
+}
+/* .con{
+    width: 960px;
+    margin: auto;
+} */
+.hello h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    word-spacing: 0.1em;
+    letter-spacing: 0.5em;
+}

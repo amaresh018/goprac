@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            max-width: 200px;
+            margin: 40px;
+            background-color: white;
+            padding: 10px;
+        }
+        input{
+            display: block;
+            margin: 10px auto;
+            padding: 4px;
+        }
+        .succes{
+            border: 2px solid green;
+        }
+        .error{
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <button onclick="ambu()">click</button> -->
+    <!-- <script>
+        function ambu(){
+            prompt("good mornig sir")
+            window.location="https://www.google.com/search?q=weather+api&sxsrf=APq-WBsmJMQp9_JltY637mtRc0-r4ZSEgA:1643380243089&source=lnms&tbm=isch&sa=X&ved=2ahUKEwioyfq81NT1AhVZyzgGHRCmDAQQ_AUoAXoECAEQAw&biw=1280&bih=601&dpr=1.5/"
+        }
+    </script> -->
+    <!-- <script>
+    const array=["amaresh",'santhosh','srini']
+    array.push('sanjay')
+    alert(array); -->
+    <!-- </script> -->
+    <form class="amaresh">
+        <input type="text" id="username" placeholder="username">
+        <input type="submit" value="submit">
+        <div class="santhosh"></div>
+
+    </form>
+    <script>
+        const user=document.querySelector('.amaresh');
+        const user1=document.querySelector('.santhosh')
+        // const username=document.querySelector('#username');
+        user.addEventListener('submit',e=>{
+            e.preventDefault();
+            const username=user.username.value;
+            const usernamepattern=/^[a-zA-Z]{1,12}$/;
+            if(usernamepattern.test(user)){
+                user1.textContent='that user name is valid'
+                user.username.setAttribute('class','sucees')
+            }else{
+                user1.textContent='must contain a numbers'
+                user.username.setAttribute('class','error')
+            }
+            // console.log(username.value)
+            // console.log(user.username.value);
+
+            
+        })
+        
+        // function name(hello){
+        //     alert(`craete a new ${hello} project`)
+        // }
+        // name("javascript")
+        function dowork(hai,hello){
+            alert(`starting my ${hai} homework`)
+        }
+        dowork('math',function(){
+            alert("finish the homework")
+        })
+    </script>
+</body>
+</html>
